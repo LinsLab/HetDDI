@@ -16,9 +16,9 @@ the form is look like:
 
 > 1618    Compound::DB09499  0
 
-- [ ] node id    
-- [ ] node name  
-- [ ] node type id
+- node id    
+- node name  
+- node type id
 
 #### 2. edges.tsv
 
@@ -26,9 +26,9 @@ the form is look like:
 
 > 318	14	30460
 
-- [ ] head node id    
-- [ ] relation id
-- [ ] tail node id
+- head node id    
+- relation id
+- tail node id
 
 #### 3. smiles.tsv
 
@@ -36,8 +36,8 @@ the form is look like:
 
 > 9   C[N+](C)(C)CCO
 
-- [ ] node(drug) id
-- [ ] smiles string
+- node(drug) id
+- smiles string
 
 #### 4. ddi.tsv
 
@@ -45,9 +45,9 @@ the form is look like:
 
 > 78  1616   59
 
-- [ ] node(drug) id
-- [ ] node(drug) id
-- [ ] interaction type
+- node(drug) id
+- node(drug) id
+- interaction type
 
 ## Environment Setting
 
