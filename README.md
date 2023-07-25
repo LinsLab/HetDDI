@@ -4,6 +4,23 @@
 
 This repository is the source code of our paper "HetDDI: a pre-trained heterogeneous graph neural network model for drug-drug interaction prediction".
 
+## Environment Setting
+
+This code is based on Pytorch and dgl-cuda. You need prepare your virtual enviroment early.
+
+## Running the code
+
+You can run the following command to run our work:
+
+> python main.py
+
+There are several parameters can be customized:
+
+1. **batch_size**
+2. **label_type**, you can choose one of "multi_class", "binary_class" or "multi_label". <br />"multi_class" and "binary_class" is only available at ddi_name = "DrugBank". <br />"multi_label" is only available at ddi_name = "TWOSIDES" 
+3. **condition**, you can choose one of scenarios s1, s2, s3 defined in our paper, default is "s1"
+4. **mode**, you can choose one of variants "HetDDI-mol", "HetDDI-kg" or "HetDDI" by "only_mol", "only_kg", "concat". Default is "HetDDI" by "concat".
+5. **ddi_name**, the dataset you want to run, "DrugBank" or "TWOSIDES". Default is "DrugBank"
 ## Dataset Preparation
 
 The dataset in used in paper is available at **/HetDDI/data/DRKG+DrugBank** and **/HetDDI/data/DRKG+TWOSIDES**
@@ -48,21 +65,3 @@ the form is look like:
 - node(drug) id
 - node(drug) id
 - interaction type
-
-## Environment Setting
-
-This code is based on Pytorch and dgl-cuda. You need prepare your virtual enviroment early.
-
-## Running the code
-
-You can run the following command to run our work:
-
-> python main.py
-
-There are several parameters can be customized:
-
-1. **batch_size**
-2. **label_type**, you can choose one of "multi_class", "binary_class" or "multi_label". <br />"multi_class" and "binary_class" is only available at ddi_name = "DrugBank". <br />"multi_label" is only available at ddi_name = "TWOSIDES" 
-3. **condition**, you can choose one of scenarios s1, s2, s3 defined in our paper, default is "s1"
-4. **mode**, you can choose one of variants "HetDDI-mol", "HetDDI-kg" or "HetDDI" by "only_mol", "only_kg", "concat". Default is "HetDDI" by "concat".
-5. **ddi_name**, the dataset you want to run, "DrugBank" or "TWOSIDES". Default is "DrugBank"
