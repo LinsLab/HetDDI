@@ -23,7 +23,7 @@ There are several parameters can be customized:
 5. **ddi_name**, the dataset you want to run, "DrugBank" or "TWOSIDES". Default is "DrugBank"
 ## Dataset Preparation
 
-The dataset in used in paper is available at **/HetDDI/data/DRKG+DrugBank** and **/HetDDI/data/DRKG+TWOSIDES**
+The dataset used in paper is available at **/HetDDI/data/DRKG+DrugBank** and **/HetDDI/data/DRKG+TWOSIDES**
 
 If you want to use yourself dataset, you need to follow these format.
 
