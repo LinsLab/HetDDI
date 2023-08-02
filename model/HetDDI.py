@@ -8,7 +8,7 @@ from model.mol import Mol
 from torch.utils.checkpoint import checkpoint
 
 
-class myModel(nn.Module):
+class HetDDI(nn.Module):
     def __init__(self,
                  kg_g,
                  smiles,
@@ -18,7 +18,7 @@ class myModel(nn.Module):
                  class_num,
                  condition
                  ):
-        super(myModel, self).__init__()
+        super(HetDDI, self).__init__()
 
         self.smiles = smiles
         self.device = kg_g.device
