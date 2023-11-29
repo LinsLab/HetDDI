@@ -66,9 +66,9 @@ the form is look like:
 - node(drug) id
 - interaction type
 
-## Weight file
+## Weight files
 
-The weight file for the model can be obtained from the following link.
+The weight files for the model can be obtained from the following link.
 
 The path for the weight files should be the root directory of project.
 
