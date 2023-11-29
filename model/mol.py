@@ -7,9 +7,6 @@ from model.hgnn import HGNN
 from rdkit import Chem
 from dgllife.utils import mol_to_bigraph, PretrainAtomFeaturizer, PretrainBondFeaturizer
 from dgl.nn.pytorch.glob import AvgPooling, MaxPooling, WeightAndSum, SumPooling
-from dgllife.model.gnn import GIN
-from model.het import Het
-from dgl.nn.pytorch import GATConv
 
 class Mol(nn.Module):
     def __init__(self, smiles, num_hidden, num_layer, device='cuda:0', condition='s1'):
